@@ -1,0 +1,65 @@
+name: breakingnews
+description: A Flutter news application.
+
+# Mencegah publikasi tidak sengaja ke pub.dev.
+publish_to: 'none'
+
+# Versi aplikasi.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # Pastikan sesuai dengan versi Flutter Anda
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Ikon standar iOS.
+  cupertino_icons: ^1.0.6
+
+  # Untuk state management.
+  provider: ^6.1.2 # Versi ini masih cukup baru dan stabil.
+
+  # Untuk melakukan HTTP requests.
+  http: ^1.2.1 # Versi ini masih cukup baru dan stabil.
+
+  # Untuk formatting tanggal, angka, dll.
+  intl: ^0.19.0 # Versi ini masih cukup baru dan stabil.
+
+  # Untuk menyimpan data sederhana (preferensi).
+  shared_preferences: ^2.2.3 # Versi ini masih cukup baru dan stabil.
+
+  # Opsional, jika Anda ingin caching gambar atau membuka URL:
+  # cached_network_image: ^3.3.1 # Untuk caching gambar dari network.
+  # url_launcher: ^6.2.6         # Untuk membuka URL di browser/aplikasi lain.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Kumpulan aturan linting yang direkomendasikan oleh Flutter.
+  # Sebaiknya gunakan versi terbaru yang stabil.
+  flutter_lints: ^4.0.0 # Diperbarui ke versi yang lebih baru, misalnya ^4.0.0 jika sudah stabil dan sesuai.
+
+# Konfigurasi spesifik Flutter.
+flutter:
+  # Baris berikut memastikan bahwa Material Icons font disertakan dengan aplikasi Anda.
+  uses-material-design: true
+
+  # Untuk menambahkan aset ke aplikasi Anda, uncomment bagian ini:
+  # assets:
+  #   - images/placeholder.png # Contoh path aset gambar
+  #   - assets/data/ # Contoh path folder aset
+
+  # Untuk menambahkan font kustom ke aplikasi Anda, uncomment bagian ini:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
